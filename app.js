@@ -5,5 +5,5 @@ const router = express.router;
 
 app.get('/',(req,res)=> res.send ('hello world'));
 
-app.listen(4000);
+app.listen(procces.env.PORT||3000);
 console.log('server on port 3000')
